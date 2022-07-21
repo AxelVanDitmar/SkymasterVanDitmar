@@ -22,6 +22,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 3;
 }
 
 .menu ul{
@@ -40,12 +41,19 @@ header{
 }
 
 .logo{
-    width: 120px;
+    width: 110px;
 }
 
+
 /* carrousel index */
+/* imagenes actuales simplemente de ejemplo... mas adelante aplicar las reales */
 
 /* imagenes */
+
+.imagen-carrousel{
+    width: 1400px;
+    height: 700px;
+}
 
 
 

@@ -8,7 +8,15 @@
 
 /* menu general */
 
-header{
+.navbar{
+    padding: 0;
+    justify-content: space-between;
+}
+
+.container{
+    background-color: rgba(97, 137, 170, 0.945);
+}
+.container-fluid{
     display: flex;
     justify-content: space-between;
     background-color: rgba(97, 137, 170, 0.945);
@@ -16,32 +24,33 @@ header{
     top: 0px;
 }
 
+
 /* menu */
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 3;
-}
 
-.menu ul{
+div ul{
     list-style: none;
     display: flex;
 }
 
-.menu ul li{
+div ul li{
     margin: 1.5rem;
 }
 
-.menu ul li a{
+.items-navbar{
     color: whitesmoke;
     text-decoration: none;
     font-size: 1.3rem;
 }
 
-.logo{
-    width: 110px;
+
+
+/* animaciones menu */
+
+div ul li:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    color: whitesmoke;
 }
 
 /* footer */
@@ -88,8 +97,8 @@ main div div p{
 }
 
 .video-youtube{
-    text-align: center;
-    justify-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -342,27 +351,7 @@ main{
 }
 
 
-
-/* animaciones menu */
-
-.menu ul li:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-}
+/* media queries FOTOS */
 
 
-/* media queries */
-
-
-@media screen and (min-width: 390px){
-
-    
-
-
-    .video-youtube{
-        width:300px;
-    }
-
-
-}
-
+/* vista celular */

@@ -108,6 +108,19 @@ footer p{
 
 /* seccion tours */
 
+
+/* GRID */
+
+.section-tours{
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas:
+                        "img-tour boxes-titulo boxes-titulo boxes-titulo"
+                        "img-tour tabla-tour tabla-tour tabla-tour"
+                        "img-tour texto-tour texto-tour texto-tour";
+}
+
 /* boxes */
 
 .boxes{
@@ -125,7 +138,7 @@ footer p{
     font-size: 39px;
     line-height: 41px;
     font-weight: 700;
-
+    grid-area: boxes-titulo;
 }
 
 /*precio duracion pasajeros */
@@ -133,15 +146,22 @@ footer p{
 .tabla-tour{
     width: 100%;
     margin: 1rem;
+    grid-area: tabla-tour;
 }
 
 .tabla-tour-item{
     text-align: center;
 }
 
+.texto-tour{
+    grid-area: texto-tour;
+}
+
 /*imagenes tours*/
 
-
+.img-tour{
+    grid-area: img-tour;
+}
 
 
 

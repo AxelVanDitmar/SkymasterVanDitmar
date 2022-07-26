@@ -44,8 +44,25 @@ header{
     width: 110px;
 }
 
+/* footer */
 
-/* carrousel index */
+footer{
+
+    background-color: rgba(97, 137, 170, 0.945);
+    color: beige;
+    padding: 20px;
+}
+
+/* redes sociales*/
+
+footer p{
+
+    text-align: right;
+
+}
+
+/* INDEX */
+
 /* imagenes actuales simplemente de ejemplo... mas adelante aplicar las reales */
 
 /* imagenes */
@@ -70,28 +87,48 @@ main div div p{
     padding-bottom: 400px;
 }
 
+.video-youtube{
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+/* NOSOTROS INDEX */
+
+.nosotros-index{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 0.4fr);
+    grid-template-areas: "img-nosotros-index titulo-nosotros-index titulo-nosotros-index"
+                            "img-nosotros-index texto-nosotros-index texto-nosotros-index";
+}
+
+.img-nosotros-index{
+    grid-area: img-nosotros-index;
+}
+
+.nosotros-index .img-nosotros-index img{
+    width: 100%;
+}
+
+.titulo-nosotros-index{
+    grid-area: titulo-nosotros-index;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.texto-nosotros-index{
+    grid-area: texto-nosotros-index;
+}
+
 /*fondo*/
 
 main{
-    background-color: rgb(146, 146, 146);
+  
 }
 
-/* footer */
-
-footer{
-
-    background-color: black;
-    color: beige;
-    padding: 20px;
-}
-
-/* redes sociales*/
-
-footer p{
-
-    text-align: right;
-
-}
 
 
 /* TOURS */
@@ -111,10 +148,10 @@ footer p{
 
 /* GRID */
 
-.section-tours{
+.boxes{
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 0.3fr);
     grid-template-areas:
                         "img-tour boxes-titulo boxes-titulo boxes-titulo"
                         "img-tour tabla-tour tabla-tour tabla-tour"
@@ -127,6 +164,9 @@ footer p{
     width: 100%;
     border-style: outset;
     text-align: center;
+    background-color: aliceblue;
+    padding-top: 30px;
+
 }
 
 /* titulo boxes */
@@ -134,7 +174,6 @@ footer p{
 .boxes-titulo{    
     text-align: center;
     color: black;
-    margin-bottom: 15px;
     font-size: 39px;
     line-height: 41px;
     font-weight: 700;
@@ -309,9 +348,15 @@ footer p{
 /* media queries */
 
 
+@media screen and (min-width: 390px){
+
+    
 
 
+    .video-youtube{
+        width:300px;
+    }
 
 
-
+}
 

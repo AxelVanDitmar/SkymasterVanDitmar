@@ -123,10 +123,16 @@ main div div p{
     grid-area: texto-nosotros-index;
 }
 
+/* CONTACTO INDEX */
+
+.contacto-index{
+    text-align: center;
+}
+
 /*fondo*/
 
 main{
-  
+  background-color: rgb(138, 138, 138);
 }
 
 

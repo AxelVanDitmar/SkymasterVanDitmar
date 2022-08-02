@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* mixin sin parametros */
+/* mixin con parametros */
 * {
   padding: 0px;
   margin: 0px;
@@ -16,11 +18,18 @@
 .container-fluid {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(97, 137, 170, 0.945);
   position: sticky;
+  background-color: rgba(97, 137, 170, 0.945);
   top: 0px; }
 
 /* menu */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 5;
+  background-color: rgba(97, 137, 170, 0.945); }
+
 div ul {
   list-style: none;
   display: flex; }
@@ -33,7 +42,7 @@ div ul {
   font-size: 1.3rem; }
 
 /* animaciones menu */
-div ul li:hover {
+.nav-link:hover {
   transform: scale(1.2);
   transition: 0.5s;
   color: whitesmoke; }

@@ -1,4 +1,8 @@
 @import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -14,17 +18,23 @@
 }
 
 .container{
-    background-color: rgba(97, 137, 170, 0.945);
+    background-color: $color-principal;
 }
 .container-fluid{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(97, 137, 170, 0.945);
-    position: sticky;
+    @include flex-row;
+    background-color: $color-principal;
     top: 0px;
 }
 
 /* menu */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 5;
+    background-color: $color-principal;
+}
 
 div ul{
     list-style: none;
@@ -41,7 +51,7 @@ div ul{
 
 /* animaciones menu */
 
-div ul li:hover{
+.nav-link:hover{
     transform: scale(1.2);
     transition: 0.5s;
     color: whitesmoke;
@@ -51,7 +61,7 @@ div ul li:hover{
 
 footer{
 
-    background-color: rgba(97, 137, 170, 0.945);
+    background-color: $color-principal;
     color: beige;
     padding: 20px;
     p{
@@ -73,11 +83,11 @@ footer{
 main div div{
     h2{
         margin: px;
-    padding: 40px;
+        padding: 40px;
     }
     p{
         margin: 5px;
-    padding-bottom: 400px;
+        padding-bottom: 400px;
     }
 }
 
@@ -126,7 +136,7 @@ main div div{
 /*fondo*/
 
 main{
-    background-color: rgb(138, 138, 138);
+    background-color: $color-fondo;
   }
 
 

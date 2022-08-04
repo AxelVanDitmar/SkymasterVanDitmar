@@ -1,6 +1,7 @@
 @import "base/variables";
 @import "base/listas";
 @import "base/mixin";
+@import "base/extend";
 
 
 *{
@@ -15,6 +16,7 @@
 .navbar{
     padding: 0;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .container{
@@ -32,7 +34,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 5;
+    position: sticky;
+    z-index: 3;
     background-color: $color-principal;
 }
 
@@ -44,7 +47,7 @@ div ul{
         }
 }
 .items-navbar{
-    color: whitesmoke;
+    color: nth($list: $colores, $n:4 );
     text-decoration: none;
     font-size: 1.3rem;
 }
@@ -54,7 +57,7 @@ div ul{
 .nav-link:hover{
     transform: scale(1.2);
     transition: 0.5s;
-    color: whitesmoke;
+    color: nth($list: $colores, $n:4 );
 }
 
 /* footer */
@@ -62,7 +65,7 @@ div ul{
 footer{
 
     background-color: $color-principal;
-    color: beige;
+    color: nth($list: $colores, $n:4 );
     padding: 20px;
     p{
         text-align: right;
@@ -76,8 +79,8 @@ footer{
 /* imagenes */
 
 .imagen-carrousel{
-    width: 1400px;
-    height: 700px;
+    @include medidas(1400px, 700px)
+
 }
 
 main div div{
@@ -100,6 +103,7 @@ main div div{
 /* NOSOTROS INDEX */
 
 .nosotros-index{
+    padding-bottom: 40px;
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,10 +137,19 @@ main div div{
     text-align: center;
 }
 
+/* mapa */
+
+.mapa{
+    @extend %mapas;
+    iframe{
+        border-radius: 3%;
+    }
+}
+
 /*fondo*/
 
 main{
-    background-color: $color-fondo;
+    background-color: $color-secundario;
   }
 
 
@@ -145,7 +158,7 @@ main{
 /* encabezado */
 
 .tours-encabezado{
-    color: black;
+    color: nth($list: $colores, $n:2 );
     font-size: 70px;
     text-align: center;
     background: url(../img/skymasterHangar.jpg);
@@ -173,7 +186,7 @@ main{
     width: 100%;
     border-style: outset;
     text-align: center;
-    background-color: aliceblue;
+    background-color: nth($list: $colores, $n:3 );
     padding-top: 30px;
 
 }
@@ -182,7 +195,7 @@ main{
 
 .boxes-titulo{    
     text-align: center;
-    color: black;
+    color: nth($list: $colores, $n:2 );
     font-size: 39px;
     line-height: 41px;
     font-weight: 700;
@@ -228,13 +241,13 @@ main{
 }
 
 .nosotros-titulo{
-    color: black;
+    color: nth($list: $colores, $n:2 );
     margin-bottom: 50px;
     font-size: 70px;
 }
 
 .nosotros-texto{
-    color: black;
+    color: nth($list: $colores, $n:2 );
 
 }
 
@@ -266,7 +279,7 @@ main{
 
 .controles{
     width: 50%;
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(150, 150, 150);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -276,13 +289,18 @@ main{
 
 .formulario-botons{
     width: 25%;
-    border: 1px solid rgb(30, 129, 211);
-    padding: 12px;
-    border-radius: 4px;
-    color: white;
-    background-color: rgb(57, 57, 255);
-    margin: 16px 0;
+    border: 1px solid $color-principal;
+    padding: 5px;
+    border-radius: 20px;
+    color: nth($list: $colores, $n:1 );
+    background-color: $color-principal;
+    margin: 10px 0;
     font-size: 16px;
+}
+
+.formulario-botons:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 

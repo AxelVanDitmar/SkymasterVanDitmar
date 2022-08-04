@@ -83,6 +83,17 @@ footer{
 
 }
 
+.titulo-img-carrousel{
+    font-size: 40px;
+    text-shadow: 1px 1px black;
+    color: nth($list: $colores, $n:3 );
+}
+.texto-img-carrousel{
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    color: nth($list: $colores, $n:3 );
+}
+
 main div div{
     h2{
         margin: px;

@@ -20,13 +20,13 @@
   z-index: 5; }
 
 .container {
-  background-color: rgba(97, 137, 170, 0.945); }
+  background-color: #5c80bc; }
 
 .container-fluid {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  background-color: rgba(97, 137, 170, 0.945);
+  background-color: #5c80bc;
   top: 0px; }
 
 /* menu */
@@ -36,7 +36,7 @@ header {
   justify-content: space-evenly;
   position: sticky;
   z-index: 3;
-  background-color: rgba(97, 137, 170, 0.945); }
+  background-color: #5c80bc; }
 
 div ul {
   list-style: none;
@@ -57,7 +57,7 @@ div ul {
 
 /* footer */
 footer {
-  background-color: rgba(97, 137, 170, 0.945);
+  background-color: #5c80bc;
   color: whitesmoke;
   padding: 20px; }
   footer p {
@@ -69,6 +69,16 @@ footer {
 .imagen-carrousel {
   width: 1400px;
   height: 700px; }
+
+.titulo-img-carrousel {
+  font-size: 40px;
+  text-shadow: 1px 1px black;
+  color: #d9edff; }
+
+.texto-img-carrousel {
+  font-size: 20px;
+  text-shadow: 1px 1px black;
+  color: #d9edff; }
 
 main div div h2 {
   margin: px;
@@ -218,11 +228,11 @@ main {
 
 .formulario-botons {
   width: 25%;
-  border: 1px solid rgba(97, 137, 170, 0.945);
+  border: 1px solid #5c80bc;
   padding: 5px;
   border-radius: 20px;
   color: #e9f5ff;
-  background-color: rgba(97, 137, 170, 0.945);
+  background-color: #5c80bc;
   margin: 10px 0;
   font-size: 16px; }
 

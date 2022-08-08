@@ -1,0 +1,14 @@
+/* mixin sin parametros */
+
+@mixin flex-row{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+/* mixin con parametros */
+
+@mixin medidas($width, $height){
+    width: $width;
+    height: $height;
+}

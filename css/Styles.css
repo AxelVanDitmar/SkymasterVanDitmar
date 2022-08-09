@@ -31,6 +31,7 @@
 
 /* menu */
 header {
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -125,7 +126,7 @@ main div div p {
 .mapa iframe {
   border-radius: 3%; }
 
-/*fondo*/
+/* fondo */
 main {
   background-color: #e6e6e6; }
 

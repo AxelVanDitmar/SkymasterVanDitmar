@@ -31,6 +31,7 @@
 /* menu */
 
 header{
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -93,6 +94,8 @@ footer{
     text-shadow: 1px 1px black;
     color: nth($list: $colores, $n:3 );
 }
+
+
 
 main div div{
     h2{
@@ -157,7 +160,7 @@ main div div{
     }
 }
 
-/*fondo*/
+/* fondo */
 
 main{
     background-color: $color-secundario;

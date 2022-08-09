@@ -5,8 +5,8 @@
 
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box; 
     font-family: sans-serif;
 }
@@ -53,6 +53,11 @@ div ul{
     font-size: 1.3rem;
 }
 
+.img-logo{
+    width: 100px;
+    height: 64px;
+}
+
 /* animaciones menu */
 
 .nav-link:hover{
@@ -80,7 +85,7 @@ footer{
 /* imagenes */
 
 .imagen-carrousel{
-    @include medidas(1400px, 700px)
+    @include medidas(100%, 700px)
 
 }
 
@@ -90,6 +95,7 @@ footer{
     color: nth($list: $colores, $n:3 );
 }
 .texto-img-carrousel{
+    width: 100%;
     font-size: 20px;
     text-shadow: 1px 1px black;
     color: nth($list: $colores, $n:3 );
@@ -322,40 +328,25 @@ main{
 
 /*seccion de contenido FOTOS */
 
-.main-fotos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3fr 1fr;
-    grid-template-areas: "cardUno cardDos cardTres"
-                        "card-body-uno card-body-dos card-body-tres";
+
+.cards{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
 }
 
-.cardUno{
-    grid-area: cardUno;
-}
-.cardDos{
-    grid-area: cardDos;
-}
-.cardTres{
-    grid-area: cardTres;
-}
-.card-body-uno{
-    grid-area: card-body-uno;
-}
-.card-body-dos{
-    grid-area: card-body-dos;
-}
-.card-body-tres{
-    grid-area: card-body-tres;
-}
+/* mapa fotos */
 
-.card-img-top{
-    width: 25rem;
+.mapa-fotos{
+    display: block;
 }
 
 /* tamaño fotos */
 
 .card-img-top{
-    width: 400px;
-    height: 266px;
+    width: 300px;
+    height: 220px;
 }
+
+/* Media queries Fotos */
+

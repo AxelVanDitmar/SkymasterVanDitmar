@@ -216,7 +216,7 @@ main{
 .boxes-titulo{    
     text-align: center;
     color: nth($list: $colores, $n:2 );
-    font-size: 39px;
+    font-size: 3rem;
     line-height: 41px;
     font-weight: 700;
     grid-area: boxes-titulo;
@@ -242,6 +242,7 @@ main{
 
 .img-tour{
     grid-area: img-tour;
+    width: 100%;
 }
 
 
@@ -268,13 +269,6 @@ main{
 
 .nosotros-texto{
     color: nth($list: $colores, $n:2 );
-
-}
-
-/* tabla de pilotos */
-
-.tabla-pilotos{
-    width: 50%;
 
 }
 
@@ -332,7 +326,7 @@ main{
 .cards{
     display: flex;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card-text-uno{
@@ -388,5 +382,60 @@ main{
     }
     .card-text-tres{
         padding-bottom: 100px;
+    }
+}
+
+/* Tours */
+
+@media screen and (max-width: 600px){
+    .boxes{
+        display: grid;
+        .boxes{
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                                "img-tour"
+                                "boxes-titulo"
+                                "tabla-tour"
+                                "texto-tour";
+        }
+    }
+    
+}
+
+/* Nosotros */
+
+@media screen and (max-width: 700px){
+
+    .img-nosotros{
+        display: none;
+    }
+    .nosotros-index{
+        padding-bottom: 40px;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 0.4fr);
+        grid-template-areas: "titulo-nosotros-index titulo-nosotros-index"
+                                "texto-nosotros-index texto-nosotros-index";
+}
+}
+
+@media screen and (min-width: 701px){
+
+   
+    .nosotros-index{
+        padding-bottom: px;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 0.4fr);
+        grid-template-areas: "img-nosotros titulo-nosotros-index titulo-nosotros-index"
+                                "img-nosotros texto-nosotros-index texto-nosotros-index";
+    }
+
+    .img-nosotros{
+        grid-area: img-nosotros;
     }
 }

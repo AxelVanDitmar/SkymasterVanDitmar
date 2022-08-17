@@ -76,7 +76,14 @@ footer{
     p{
         text-align: right;
     }
+    div{
+        justify-items: right;
+        text-align: right;
+    }
 }
+
+
+
 
 /* INDEX */
 
@@ -274,6 +281,11 @@ main{
 
 
 /* CONTACTO */
+
+.formularioContacto{
+    text-align: center;
+    justify-content: center;
+}
 
 /* formulario */
 

@@ -67,9 +67,11 @@ footer {
   padding: 20px; }
   footer p {
     text-align: right; }
+  footer div {
+    justify-items: right;
+    text-align: right; }
 
 /* INDEX */
-/* imagenes actuales simplemente de ejemplo... mas adelante aplicar las reales */
 /* imagenes */
 .imagen-carrousel {
   width: 100%;
@@ -141,7 +143,7 @@ main {
   color: #1a1a1a;
   font-size: 70px;
   text-align: center;
-  background: url(../img/skymasterHangar.jpg);
+  background: url(../img/hangarconGlobo.jpg);
   padding: 200px; }
 
 /* seccion tours */
@@ -196,17 +198,23 @@ main {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: url(../img/skymasterHangar.jpg); }
+  background: url(../img/hangarconGlobo.jpg); }
 
 .nosotros-titulo {
   color: #1a1a1a;
   margin-bottom: 50px;
-  font-size: 70px; }
+  font-size: 70px;
+  text-shadow: 1px 1px whitesmoke; }
 
 .nosotros-texto {
-  color: #1a1a1a; }
+  color: #1a1a1a;
+  text-shadow: 1px 1px whitesmoke; }
 
 /* CONTACTO */
+.formularioContacto {
+  text-align: center;
+  justify-content: center; }
+
 /* formulario */
 .formulario-contacto {
   width: 250px;

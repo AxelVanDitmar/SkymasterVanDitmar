@@ -87,7 +87,6 @@ footer{
 
 /* INDEX */
 
-/* imagenes actuales simplemente de ejemplo... mas adelante aplicar las reales */
 
 /* imagenes */
 
@@ -188,7 +187,7 @@ main{
     color: nth($list: $colores, $n:2 );
     font-size: 70px;
     text-align: center;
-    background: url(../img/skymasterHangar.jpg);
+    background: url(../img/hangarconGlobo.jpg);
     padding: 200px;
 }
 
@@ -265,18 +264,19 @@ main{
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: url(../img/skymasterHangar.jpg)
+    background: url(../img/hangarconGlobo.jpg)
 }
 
 .nosotros-titulo{
     color: nth($list: $colores, $n:2 );
     margin-bottom: 50px;
     font-size: 70px;
+    text-shadow: 1px 1px whitesmoke;
 }
 
 .nosotros-texto{
     color: nth($list: $colores, $n:2 );
-
+    text-shadow: 1px 1px whitesmoke;
 }
 
 

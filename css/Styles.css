@@ -112,9 +112,8 @@ main div div p {
 
 .img-nosotros-index {
   grid-area: img-nosotros-index; }
-
-.nosotros-index .img-nosotros-index img {
-  width: 100%; }
+  .img-nosotros-index img {
+    width: 100%; }
 
 .titulo-nosotros-index {
   grid-area: titulo-nosotros-index;
@@ -321,7 +320,7 @@ main {
     grid-template-areas: "titulo-nosotros-index titulo-nosotros-index" "texto-nosotros-index texto-nosotros-index"; } }
 
 @media screen and (min-width: 701px) {
-  .nosotros-index {
+  .nosotros-casilla {
     padding-bottom: px;
     padding: 40px;
     display: grid;

@@ -142,7 +142,11 @@ main {
   color: #1a1a1a;
   font-size: 70px;
   text-align: center;
+  text-shadow: 1px 1px whitesmoke;
   background: url(../img/hangarconGlobo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   padding: 200px; }
 
 /* seccion tours */
@@ -197,17 +201,21 @@ main {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: url(../img/hangarconGlobo.jpg); }
+  background: url(../img/vistaAfueraNoche.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; }
 
 .nosotros-titulo {
-  color: #1a1a1a;
+  color: #e9f5ff;
   margin-bottom: 50px;
   font-size: 70px;
-  text-shadow: 1px 1px whitesmoke; }
+  text-shadow: 1px 1px black; }
 
 .nosotros-texto {
-  color: #1a1a1a;
-  text-shadow: 1px 1px whitesmoke; }
+  color: #e9f5ff;
+  text-shadow: 1px 1px black;
+  font-size: 25px; }
 
 /* CONTACTO */
 .formularioContacto {

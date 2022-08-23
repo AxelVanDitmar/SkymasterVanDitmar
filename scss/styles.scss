@@ -186,7 +186,11 @@ main{
     color: nth($list: $colores, $n:2 );
     font-size: 70px;
     text-align: center;
+    text-shadow: 1px 1px whitesmoke;
     background: url(../img/hangarconGlobo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     padding: 200px;
 }
 
@@ -263,19 +267,23 @@ main{
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: url(../img/hangarconGlobo.jpg)
+    background: url(../img/vistaAfueraNoche.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .nosotros-titulo{
-    color: nth($list: $colores, $n:2 );
+    color: nth($list: $colores, $n:1 );
     margin-bottom: 50px;
     font-size: 70px;
-    text-shadow: 1px 1px whitesmoke;
+    text-shadow: 1px 1px black;
 }
 
 .nosotros-texto{
-    color: nth($list: $colores, $n:2 );
-    text-shadow: 1px 1px whitesmoke;
+    color: nth($list: $colores, $n:1 );
+    text-shadow: 1px 1px black;
+    font-size: 25px;
 }
 
 
